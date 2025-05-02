@@ -2,8 +2,13 @@ import TelegramBot, { KeyboardButton } from "node-telegram-bot-api";
 import dotenv from "dotenv";
 
 dotenv.config();
-
-const bot = new TelegramBot(process.env.BOT_TOKEN!, { polling: true });
+const token = process.env.BOT_TOKEN;
+if (!token) {
+  throw new Error(
+    "BOT_TOKEN não definido. Verifique suas variáveis de ambiente."
+  );
+}
+const bot = new TelegramBot(token, { polling: true });
 
 console.log("🤖 Bot FURIA iniciado e escutando mensagens...");
 
