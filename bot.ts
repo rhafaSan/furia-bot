@@ -1,7 +1,7 @@
 import TelegramBot, { KeyboardButton } from "node-telegram-bot-api";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 
-dotenv.config();
+// dotenv.config();
 const token = process.env.BOT_TOKEN;
 if (!token) {
   throw new Error(
