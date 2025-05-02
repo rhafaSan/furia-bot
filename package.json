@@ -1,11 +1,11 @@
 {
   "name": "furia_fans",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon --exec tsx src/index.ts"
+    "start": "ts-node src/bot.ts",
+    "dev": "nodemon --exec tsx src/bot.ts"
   },
   "author": "",
   "license": "ISC",
